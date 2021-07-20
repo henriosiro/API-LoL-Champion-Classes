@@ -1,4 +1,3 @@
-get_ipython().system('pip install Pillow')
 from PIL import Image
 from IPython.display import display
 import requests as r
