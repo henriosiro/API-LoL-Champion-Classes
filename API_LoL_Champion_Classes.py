@@ -56,9 +56,9 @@ def display_image(path):
 url = 'http://ddragon.leagueoflegends.com/cdn/11.14.1/data/en_US/champion.json'
 resp = r.get(url)
 if resp.status_code == 200:
-    print('A requisição para API do LoL obteve sucesso!')
+    print('A leitura do Data Dragon funcionou!')
 else:
-    print('A requisião para API do LoL falhou.')
+    print('A leitura do Data Dragon falhou.')
 raw_data = resp.json()
 champions_data = []
 for value in raw_data['data'].values():
